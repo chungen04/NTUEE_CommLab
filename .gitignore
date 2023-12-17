@@ -1,4 +1,6 @@
-result_image*/
+result*/
+test*
+*.npy
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
