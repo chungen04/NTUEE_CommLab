@@ -112,8 +112,8 @@ def QuantumSimulate(qc_h, qc_v, circ_list):
     return sv_h, sv_v
 
 def scanEdge(sv_h, sv_v):
-    edge_scan_h = np.array([sv_h[f'{2*i+1:03b}'].real for i in range(2**data_qb)]).reshape(image.shape[1], image.shape[2])
-    edge_scan_v = np.array([sv_v[f'{2*i+1:03b}'].real for i in range(2**data_qb)]).reshape(image.shape[1], image.shape[2]).T
+    edge_scan_h = np.array([sv_h[f'{2*i+1:0{total_qb}b}'].real for i in range(2**data_qb)]).reshape(image.shape[1], image.shape[2])
+    edge_scan_v = np.array([sv_v[f'{2*i+1:0{total_qb}b}'].real for i in range(2**data_qb)]).reshape(image.shape[1], image.shape[2]).T
 
     return edge_scan_h, edge_scan_v
 
