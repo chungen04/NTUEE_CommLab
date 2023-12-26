@@ -1,5 +1,4 @@
 qiskit
 matplotlib
 numpy
-os
 Pillow
