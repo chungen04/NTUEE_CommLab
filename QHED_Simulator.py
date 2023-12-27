@@ -23,6 +23,7 @@ def get_args():
     parser.add_argument('--std', default = 0.01, type=float)
     
     return parser.parse_args()
+# python3 QHED_Simulator.py --name elephant --size 64 --noise --std 0.01
 
 args = get_args()
 

@@ -1,0 +1,5 @@
+qiskit
+matplotlib
+numpy
+Pillow
+qiskit-aer
